@@ -1,0 +1,50 @@
+.underlineOnHover {
+  position: relative;
+}
+.underlineOnHover::after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 215, 255, 1) 0%,
+    rgba(11, 29, 219, 1) 33%,
+    rgba(140, 11, 219, 1) 67%,
+    rgba(255, 0, 211, 1) 0100%
+  );
+  transition: all 0.3s ease 0s, left;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+}
+.underlineOnHover:hover::after {
+  transform: scaleX(100%);
+}
+
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 215, 255, 1) 0%,
+    rgba(11, 29, 219, 1) 33%,
+    rgba(140, 11, 219, 1) 67%,
+    rgba(255, 0, 211, 1) 0100%
+  );
+  background-clip: text;
+}
+
+.gradient-btn {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 215, 255, 1) 0%,
+    rgba(11, 29, 219, 1) 33%,
+    rgba(140, 11, 219, 1) 67%,
+    rgba(255, 0, 211, 1) 0100%
+  );
+}
+
+.tech-stack {
+  
+}
