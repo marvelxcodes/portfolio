@@ -9,13 +9,13 @@ type NavItemProps = {
 
 const NavItem = ({ children, href, onClick }: NavItemProps) => {
   return (
-    <Link href={href}>
-      <a
-        onClick={onClick}
-        className="hover:opacity-80 transition-opacity text-center flex items-center underlineOnHover"
-      >
-        {children}
-      </a>
+    <Link
+      onClick={onClick}
+      className="hover:opacity-80 transition-opacity text-center
+                flex items-center underlineOnHover"
+      href={href}
+    >
+      {children}
     </Link>
   )
 }

@@ -73,28 +73,15 @@ const Home: NextPage = () => {
           />
         </div>
       </div>
-      <div className="bg-[#040b1e] py-16 min-h-screen flex flex-col flex-1 items-center justify-center">
+      <div className="bg-[#040b1e] px-5 py-16 min-h-screen flex flex-col flex-1 items-center justify-center">
         <h1 className="text-white text-4xl font-extrabold m-8">
           My Tech Stack
         </h1>
-        <div className="flex w-full md:w-5/6 bg-red-50 flex-1 p-5 relative">
-          <Float src={React} />
-          <Float src={ExpressJS} />
-          <Float src={MongoDB} />
-          <Float src={NodeJS} />
-          <Float src={CSS} />
-          <Float src={HTML} />
-          <Float src={Figma} />
-          <Float src={Sass} />
-          <Float src={Java} />
-          <Float src={JavaScript} />
-          <Float src={TypeScript} />
-          <Float src={NextJS} />
-          <Float src={PostgreSQL} />
-          <Float src={TailwindCSS} />
-          <Float src={Redux} />
-          <Float src={Python} />
-          <Float src={Prisma} />
+        <div className="flex w-full flex-wrap justify-center md:w-5/6 border-gray-500 border-2 flex-1 p-5 relative rounded-lg">
+          <Float name="React JS" color="" src={React} />
+          <Float name="Express JS" color="" src={ExpressJS} />
+          <Float name="Mongo DB" color="" src={MongoDB} />
+          <Float name="Node JS" color="" src={NodeJS} />
         </div>
       </div>
     </>

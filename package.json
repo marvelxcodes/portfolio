@@ -3,16 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev --turbo",
+    "build": "next build --turbo",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@svgr/webpack": "^6.5.1",
-    "next": "12.3.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "^13.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-ripples": "^2.2.1"
   },
   "devDependencies": {
